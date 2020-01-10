@@ -1,0 +1,44 @@
+{
+  "name": "project-4-tm",
+  "version": "1.0.0",
+  "description": "task manager",
+  "main": "index.js",
+  "bin": {
+    "hello": "dist/bin/hello.js"
+  },
+  "scripts": {
+    "build": "NODE_ENV=production babel src --out-dir dist --source-maps inline",
+    "prepublishOnly": "npm run build"
+  },
+  "files": [
+    "dist"
+  ],
+  "dependencies": {
+    "@babel/cli": "^7.7.7",
+    "@babel/core": "^7.7.7",
+    "@babel/node": "^7.7.7",
+    "@babel/preset-env": "^7.7.7",
+    "autoprefixer": "^9.7.3",
+    "babel-eslint": "^10.0.3",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.19.1",
+    "koa": "^2.11.0",
+    "postcss-cli": "^7.1.0",
+    "rollbar": "^2.14.4"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/egupsv/backend-project-lvl4.git"
+  },
+  "keywords": [
+    "manager"
+  ],
+  "author": "Egupov Sergey",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/egupsv/backend-project-lvl4/issues"
+  },
+  "homepage": "https://github.com/egupsv/backend-project-lvl4#readme"
+}
